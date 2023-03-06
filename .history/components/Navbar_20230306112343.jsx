@@ -60,40 +60,40 @@ export default function Navbar () {
                                 </div>
                             </div>
                             <div className="border-b border-black my-4">
-                                <p className="w-[85%] md:w-[90%] py-4 font-bold text-white">Let's code something outstanding</p>
+                                <p className="w-[85%] md:w-[90%] py-4 font-bold">Let's code something outstanding</p>
                             </div>
                         </div>
                         <div className="py-4 flex flex-col">
                             <ul className="uppercase">
                                 <Link href="/">
-                                    <li className="py-4 text-sm font-bold text-white">Home</li>
+                                    <li className="py-4 text-sm font-bold">Home</li>
                                 </Link>
                                 <Link href="/">
-                                    <li className="py-4 text-sm font-bold text-white ">About</li>
+                                    <li className="py-4 text-sm font-bold ">About</li>
                                 </Link>
                                 <Link href="/">
-                                    <li className="py-4 text-sm font-bold text-white">Skills</li>
+                                    <li className="py-4 text-sm font-bold">Skills</li>
                                 </Link>
                                 <Link href="/">
-                                    <li className="py-4 text-sm font-bold text-white">Projects</li>
+                                    <li className="py-4 text-sm font-bold">Projects</li>
                                 </Link>
                                 <Link href="/">
-                                    <li className="py-4 text-sm font-bold text-white">Contact</li>
+                                    <li className="py-4 text-sm font-bold">Contact</li>
                                 </Link>
                             </ul>
                             <div className="pt-40">
                                 <p className="uppercase tracking-widest text-red-600 font-bold">Connect with me</p>
                                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                                    <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer bg-white hover:scale-105 ease-in duration-300">
+                                    <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                                         <FaLinkedinIn />
                                     </div>
-                                    <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer bg-white hover:scale-105 ease-in duration-300">
+                                    <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                                         <FaGithub />
                                     </div>
-                                    <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer bg-white hover:scale-105 ease-in duration-300">
+                                    <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                                         <FaInstagram />
                                     </div>
-                                    <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer bg-white hover:scale-105 ease-in duration-300">
+                                    <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                                         <AiOutlineMail />
                                     </div>
                                 </div>

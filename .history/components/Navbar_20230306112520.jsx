@@ -60,7 +60,7 @@ export default function Navbar () {
                                 </div>
                             </div>
                             <div className="border-b border-black my-4">
-                                <p className="w-[85%] md:w-[90%] py-4 font-bold text-white">Let's code something outstanding</p>
+                                <p className="w-[85%] md:w-[90%] py-4 font-bold">Let's code something outstanding</p>
                             </div>
                         </div>
                         <div className="py-4 flex flex-col">
@@ -78,7 +78,7 @@ export default function Navbar () {
                                     <li className="py-4 text-sm font-bold text-white">Projects</li>
                                 </Link>
                                 <Link href="/">
-                                    <li className="py-4 text-sm font-bold text-white">Contact</li>
+                                    <li className="py-4 text-sm font-bold">Contact</li>
                                 </Link>
                             </ul>
                             <div className="pt-40">
