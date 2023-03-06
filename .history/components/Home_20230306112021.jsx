@@ -32,8 +32,8 @@ export default function Hero() {
             <div>
               <motion.div
                 className="h-full w-full rounded-full shadow-lg overflow-hidden"
-                whileHover={{ scale: 1.1}}
-                whileTap={{ scale: 0.6 }}
+                whileHover={{ scale: 1.9}}
+                whileTap={{ scale: 0.5 }}
               >
                 <Image
                   className="rounded-full"
