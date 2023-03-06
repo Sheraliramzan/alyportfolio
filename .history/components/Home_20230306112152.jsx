@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
       <Head>
-        <title> Aly | Front-end Developer</title>
+        <title>My Portfolio | </title>
       </Head>
       <div className="max-w-screen-lg w-full px-4 sm:px-6 lg:px-8">
         <div className="relative flex flex-col md:flex-row items-center justify-center md:justify-between py-8 md:py-12 rounded-lg shadow-lg overflow-hidden">
