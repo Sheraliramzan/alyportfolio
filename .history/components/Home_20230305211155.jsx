@@ -37,7 +37,7 @@ export default function Hero() {
               >
                 <Image
                   className="rounded-full"
-                  src="/../public/assets/image.png"
+                  src="/../public/assets/.png"
                   alt="Hero Image"
                   width={300}
                   height={300}
