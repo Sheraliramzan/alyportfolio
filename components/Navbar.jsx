@@ -12,7 +12,7 @@ export default function Navbar () {
         setShow(!show);
     }
     return(
-        <div className="fixed w-full h-20 p-6 shadow-xl shadow-gray-500 z-[100] bg-black">
+        <div className="fixed top-0 w-full h-21 p-6 shadow-xl shadow-gray-500 z-[100] bg-black">
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <Image 
                     src="/assets/logo.png" 

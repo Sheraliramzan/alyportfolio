@@ -24,7 +24,7 @@
 }
 
 body, html {
-  overflow: auto;
+  overflow-y:scroll;
 }
 .glow-on-hover:hover {
   box-shadow: 0 10px 10px red;

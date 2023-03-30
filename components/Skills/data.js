@@ -56,7 +56,7 @@ export const data = [
     },
     {
         id: 12,
-        title: "My SQL",
+        title: "MySQL",
         image: "/skills/my.png",
     },
     {
@@ -66,7 +66,7 @@ export const data = [
     },
     {
         id: 14,
-        title: "Mongo DB",
+        title: "MongoDB",
         image: "/skills/Mongo.png",
     },
     {

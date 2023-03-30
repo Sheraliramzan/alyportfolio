@@ -8,7 +8,7 @@ export default function About() {
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-red-300">About</p>
-          <h2 className="py-4 text-red-500">Who I Am</h2>
+          <h2 className="py-4 text-white uppercase">Who I <span className="text-red-500">AM</span></h2>
           <p className="py-2 text-gray-50">
             As a full stack developer, you possess a wide range of technical skills and expertise across multiple areas of software
             development. I am proficient in both front-end and back-end development, with a deep understanding of web technologies,
