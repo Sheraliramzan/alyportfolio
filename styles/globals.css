@@ -23,3 +23,9 @@
   }
 }
 
+body, html {
+  overflow: auto;
+}
+.glow-on-hover:hover {
+  box-shadow: 0 10px 10px red;
+}

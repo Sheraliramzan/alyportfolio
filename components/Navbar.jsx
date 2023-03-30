@@ -12,7 +12,7 @@ export default function Navbar () {
         setShow(!show);
     }
     return(
-        <div className="fixed w-full h-20 bg-black shadow-xl shadow-white z-[100]">
+        <div className="fixed w-full h-20 p-6 shadow-xl shadow-gray-500 z-[100] bg-black">
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <Image 
                     src="/assets/logo.png" 
@@ -21,6 +21,7 @@ export default function Navbar () {
                     height={50}
                 />
                 <div>
+                    
                     <ul className=" hidden md:flex ">
                         <Link href="/">
                             <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-600 text-white">Home</li>
@@ -39,8 +40,9 @@ export default function Navbar () {
                         </Link>
 
                     </ul>
-                     <div onClick={handleShow} className="md:hidden">
-                         <AiOutlineMenu size={25}/>
+                   
+                     <div onClick={handleShow} className="md:hidden ml-[150px]">
+                         <AiOutlineMenu className="" size={35}/>
                     </div>
                 </div>
                 <div className={show ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/60" : ""}>
