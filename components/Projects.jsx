@@ -32,15 +32,15 @@ const Projects = () => {
                     title2="React | Firebase | IOS"
                     />
                     <ProjectItem 
-                    title="Pathfinder" 
+                    title="PokeVerse" 
                     backgroundImg={back3}
                     projectUrl="/trackstacks"/>
                     <ProjectItem 
-                    title="Chillingo" 
+                    title="Pathfinder" 
                     backgroundImg= {back4}
                     projectUrl="/trackstacks"/>
                     <ProjectItem 
-                    title="PokeVerse" 
+                    title="Chillingo" 
                     backgroundImg={back5}
                     projectUrl="/trackstacks"/>
                     <ProjectItem 

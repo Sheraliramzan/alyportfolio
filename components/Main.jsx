@@ -38,11 +38,11 @@ export default function Hero() {
     <div className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
-          <p className="uppercase text-sm tracking-widest text-gray-100 font-sans">
+          <p className="uppercase text-sm tracking-widest text-gray-100 ">
             Welcome To My Portfolio
           </p>
-          <h2 className="font-sans py-4 text-gray-100">
-            Hey, I'm <span className="text-red-600 font-sans">Aly</span>
+          <h2 className=" py-4 text-gray-100">
+            Hey, I'm <span className="text-red-600 ">Aly</span>
           </h2>
           <h2 className="font-sans py-4 text-gray-600">
             I'm a{" "}

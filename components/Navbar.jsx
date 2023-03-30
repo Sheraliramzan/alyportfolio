@@ -1,18 +1,30 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, {useState} from "react";
+import React, {useState, useEffect, use} from "react";
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from "react-icons/ai";
 import {FaLinkedinIn, FaInstagram, FaGithub} from "react-icons/fa";
 
 export default function Navbar () {
 
     const [show, setShow] = useState(false);
+    const [shadow, setShadow] = useState(false);
 
     const handleShow = () => {
         setShow(!show);
     }
+
+    useEffect(() => {
+       const handleShadow = () => {
+        if(window.scrollY >= 90){
+            setShadow(true);
+        }else{
+            setShadow(false);
+        }
+       }
+         window.addEventListener("scroll", handleShadow);
+    }, []);
     return(
-        <div className="fixed top-0 w-full h-21 p-6 shadow-xl shadow-gray-500 z-[100] bg-black">
+        <div className={shadow ? 'fixed top-0 w-full h-21 p-6 shadow-xl shadow-gray-500 z-[100] bg-black' : "fixed top-0 w-full h-21 p-6  z-[100] bg-black"}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <Image 
                     src="/assets/logo.png" 
