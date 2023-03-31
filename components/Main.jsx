@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedin,FaInstagram } from "react-icons/fa";
+import Back from "./Back";
 
 export default function Hero() {
   const [textIndex, setTextIndex] = useState(0);
@@ -41,16 +42,16 @@ export default function Hero() {
           <p className="uppercase text-sm tracking-widest text-gray-100 ">
             Welcome To My Portfolio
           </p>
-          <h2 className=" py-4 text-gray-100">
+          <h2 className=" py-4 text-white">
             Hey, I'm <span className="text-red-600 ">Aly</span>
           </h2>
-          <h2 className="font-sans py-4 text-gray-600">
+          <h2 className="font-sans py-4 text-white">
             I'm a{" "}
             <span className="text-red-600 font-sans typewriter-text">
               {displayedText}
             </span>
           </h2>
-          <p className="font-sans py-4 text-gray-600 max-w-[70%] m-auto">
+          <p className="font-sans py-4 text-white max-w-[70%] m-auto">
             As a {fullText.toLowerCase()}, you possess a diverse range of technical
             skills and knowledge in {fullText.toLowerCase()} development. You
             are able to design and develop fully functional {fullText.toLowerCase()} applications

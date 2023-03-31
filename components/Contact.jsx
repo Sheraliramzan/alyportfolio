@@ -15,8 +15,9 @@ const Contact = () => {
                 <h2 className='uppercase text-white py-6'>
                  Get In <span className='text-red-500'>Touch</span>
                 </h2>
-             <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3'>
-                <div className='shadow-xl shadow-red-500 rounded-xl p-4'>
+             <div className=' grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3'>
+                <div className='shadow-xl shadow-[#22262d] bg-black
+                    bg-opacity-50 rounded-xl p-4'>
               <div className='p-4'>
                 <div>
                   <img
@@ -50,7 +51,8 @@ const Contact = () => {
                 </div>
               </div>
              </div>
-                <div className='col-span-1 sm:col-span-2 w-full h-auto shadow-xl shadow-red-500 rounded-xl lg:p-4'>
+                <div className='col-span-1 sm:col-span-2 w-full h-auto shadow-xl bg-black
+                    bg-opacity-50 shadow-[#22262d] rounded-xl lg:p-4'>
                 <div className='p-4'>
                 <form>
                   <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 w-full py-2'>
