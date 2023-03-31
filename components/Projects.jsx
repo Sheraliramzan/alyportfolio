@@ -11,7 +11,7 @@ import back6 from '../public/projects/backTrack.png'
 
 const Projects = () => {
   return (
-    <div className='w-full'>
+    <div id='projects' className='w-full'>
         <div className='max-w-[1240px] mx-auto px-2 py-16'>
             <p className='text-xl tracking-widest uppercase text-red-300'> 
                 Projects
@@ -21,7 +21,7 @@ const Projects = () => {
                     <ProjectItem 
                     title="Twit-Wit" 
                     backgroundImg={back2}
-                    projectUrl="/twitwit"
+                    projectUrl="/twit-wit"
                     title2 ="NextJS | Typescript | MongoDB"
                     />
                     

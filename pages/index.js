@@ -1,11 +1,10 @@
 import Head from "next/head";
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Main";
 import About from "@/components/About";
 import Skills from "@/components/Skills/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
-import Back from "@/components/Back";
+
 
 export default function Home() {
   return (
@@ -16,12 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/logo.png" />
       </Head>
-      <div className="z-[-1] fixed h-screen pointer-events-none">
-        <Back />
-      </div>
-
       <div className="z-1">
-        <Navbar />
         <Hero />
         <About />
         <Skills />

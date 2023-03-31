@@ -26,28 +26,30 @@ export default function Navbar () {
     return(
         <div className={shadow ? 'fixed top-0 w-full h-21 p-6 shadow-xl shadow-gray-500 z-[100] bg-black' : "fixed top-0 w-full h-21 p-6  z-[100] bg-black"}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+                <Link href="/">
                 <Image 
                     src="/assets/logo.png" 
                     alt="/" 
                     width={105} 
                     height={50}
                 />
+                </Link>
                 <div>
                     
                     <ul className=" hidden md:flex ">
                         <Link href="/">
                             <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-600 text-white">Home</li>
                         </Link>
-                        <Link href="/">
+                        <Link href="#about">
                             <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-600 text-white">About</li>
                         </Link>
-                        <Link href="/">
+                        <Link href="#skills">
                             <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-600 text-white">Skills</li>
                         </Link>
-                        <Link href="/">
+                        <Link href="#projects">
                             <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-600 text-white">Projects</li>
                         </Link>
-                        <Link href="/">
+                        <Link href="#contact">
                             <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-600 text-white">Contact</li>
                         </Link>
 
@@ -63,12 +65,14 @@ export default function Navbar () {
                     "fixed left-[-100%] top-0 p-10 ease-in duration-500"}>
                         <div>
                             <div className="flex w-full items-center justify-between">
+                                <Link href="/">
                                 <Image 
                                 src="/assets/logo.png" 
                                 alt="/" 
                                 width={87} 
                                 height={35}
                                 />
+                                </Link>
                                 <div onClick={handleShow} className="bg-gray-500 rounded-full shadow-lg shadow-black p-3 cursor-pointer">
                                     <AiOutlineClose size={25}/>
                                 </div>
@@ -80,19 +84,19 @@ export default function Navbar () {
                         <div className="py-4 flex flex-col">
                             <ul className="uppercase">
                                 <Link href="/">
-                                    <li className="py-4 text-sm font-bold text-white">Home</li>
+                                    <li onClick={()=> setShow(false)} className="py-4 text-sm font-bold text-white">Home</li>
                                 </Link>
-                                <Link href="/">
-                                    <li className="py-4 text-sm font-bold text-white ">About</li>
+                                <Link href="/#about">
+                                    <li onClick={()=> setShow(false)} className="py-4 text-sm font-bold text-white ">About</li>
                                 </Link>
-                                <Link href="/">
-                                    <li className="py-4 text-sm font-bold text-white">Skills</li>
+                                <Link href="/#skills">
+                                    <li onClick={()=> setShow(false)} className="py-4 text-sm font-bold text-white">Skills</li>
                                 </Link>
-                                <Link href="/">
-                                    <li className="py-4 text-sm font-bold text-white">Projects</li>
+                                <Link href="/#projects">
+                                    <li onClick={()=> setShow(false)} className="py-4 text-sm font-bold text-white">Projects</li>
                                 </Link>
-                                <Link href="/">
-                                    <li className="py-4 text-sm font-bold text-white">Contact</li>
+                                <Link href="/#contact">
+                                    <li onClick={()=> setShow(false)} className="py-4 text-sm font-bold text-white">Contact</li>
                                 </Link>
                             </ul>
                             <div className="pt-40">
