@@ -1,8 +1,8 @@
-import '@/styles/globals.css'
-import "@/styles/typewriter.css";
-import "@/styles/back.css";
-import Navbar from '@/components/Navbar';
-import Back from '@/components/Back';
+import '../styles/globals.css'
+import "../styles/typewriter.css";
+import "../styles/back.css";
+import Navbar from '../components/Navbar';
+import Back from '../components/Back';
 
 
 export default function App({ Component, pageProps }) {
