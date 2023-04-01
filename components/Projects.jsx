@@ -4,10 +4,10 @@ import React from 'react'
 import ProjectItem from './ProjectItem'
 import back from '../public/projects/backTrack.png'
 import back2 from '../public/projects/backTweet.png'
-import back3 from '../public/projects/backTrack.png'
-import back4 from '../public/projects/backTrack.png'
-import back5 from '../public/projects/backTrack.png'
-import back6 from '../public/projects/backTrack.png'
+import back3 from '../public/projects/backPoke.png'
+import back4 from '../public/projects/backPath.png'
+import back5 from '../public/projects/backChill.png'
+import back6 from '../public/projects/backWeat.png'
 
 const Projects = () => {
   return (
@@ -29,24 +29,32 @@ const Projects = () => {
                     title="TrackStacks" 
                     backgroundImg={back}
                     projectUrl="/trackstacks"
-                    title2="React | Firebase | IOS"
+                    title2="ReactJS | Firebase | IOS"
                     />
                     <ProjectItem 
                     title="PokeVerse" 
                     backgroundImg={back3}
-                    projectUrl="/trackstacks"/>
+                    projectUrl="/pokeverse"
+                    title2='NextJS | Axios | Tailwind | API | Pokedex '
+                    />
                     <ProjectItem 
                     title="Pathfinder" 
                     backgroundImg= {back4}
-                    projectUrl="/trackstacks"/>
+                    projectUrl="/pathfinder"
+                    title2='ReactJS | GreenShock | JavaScript'
+                    />
                     <ProjectItem 
                     title="Chillingo" 
                     backgroundImg={back5}
-                    projectUrl="/trackstacks"/>
+                    projectUrl="/chillingo"
+                    title2='NextJS | Redux | ExpressJS | Sqlite3'
+                    />
                     <ProjectItem 
                     title="WeatherAPI" 
                     backgroundImg={back6}
-                    projectUrl="/trackstacks"/>
+                    projectUrl="/weatherrico"
+                    title2='NextJS | Axios | Tailwind | API | OpenWeather '
+                    />
                 </div>
         </div>
     </div>
