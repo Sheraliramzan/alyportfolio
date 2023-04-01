@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import login from '../public/twit/login.png'
 import Link from 'next/link'
 import Head from 'next/head'
 import A1 from '../public/poke/A1.png'
