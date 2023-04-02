@@ -12,7 +12,7 @@ export default function Skills() {
         <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {data.map((item, index) => {
             return (
-                <div className="p-2 shadow-xl shadow-gray-600 bg-black
+                <div className="p-2 shadow-xl shadow-gray-600 bg-red-50
                 bg-opacity-50 rounded-xl hover:scale-105 ease-in duration-300 z-99 glow-on-hover" key={item.id}>
                 <div className="grid grid-cols-2 gap-4 justify-center items-center mr-5">
                   <div className="m-auto py-2">

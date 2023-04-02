@@ -4,6 +4,31 @@ import { AiOutlineMail } from 'react-icons/ai';
 import Link from 'next/link';
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi';
 
+const handleSubmit = async (event) => {
+  event.preventDefault(); // prevent default form submission behavior
+  const formData = new FormData(event.target); // get form data
+  const name = formData.get('name');
+  const phone = formData.get('phone');
+  const email = formData.get('email');
+  const subject = formData.get('subject');
+  const message = formData.get('message');
+  const body = JSON.stringify({ name, phone, email, subject, message }); // create request body
+
+  try {
+    const response = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body,
+    });
+    const data = await response.json();
+    console.log('Email sent:', data.message);
+  } catch (error) {
+    console.error('Error sending email:', error);
+  }
+};
+
 const Contact = () => {
   return (
     <div id='contact' className='w-full h-full overflow-y-scroll'>
@@ -36,55 +61,49 @@ const Contact = () => {
                 </div>
                 <p className='uppercase text-red-500'>Connect with me</p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
+                <Link href="https://www.linkedin.com/in/aly-ramzan-22018b266/" target="_blank">
                   <div className='rounded-full shadow-lg shadow-red-200 p-6 cursor-pointer bg-red-500 hover:scale-110 ease-in duration-300'>
-                    <FaLinkedin />
+                    <FaLinkedin size={24} color="#fff" />
                   </div>
+                  </Link>
+                  <Link href="https://github.com/Sheraliramzan" target="_blank">
                   <div className='rounded-full shadow-lg shadow-red-200 p-6 cursor-pointer bg-red-500 hover:scale-110 ease-in duration-300'>
-                    <FaGithub />
+                    <FaGithub size={24} color="#fff" />
                   </div>
+                  </Link>
+                  <Link href="mailto:sheraliramzan36@gmail.com">
                   <div className='rounded-full shadow-lg shadow-red-200 p-6 cursor-pointer bg-red-500 hover:scale-110 ease-in duration-300'>
-                    <AiOutlineMail />
+                    <AiOutlineMail size={24} color="#fff" />
                   </div>
+                  </Link>
+                  <Link href="https://www.instagram.com/alyramzan/" target="_blank">
                   <div className='rounded-full shadow-lg shadow-red-200 p-6 cursor-pointer bg-red-500 hover:scale-110 ease-in duration-300'>
-                    <FaInstagram />
+                    <FaInstagram size={24} color="#fff" />
                   </div>
+                  </Link>
                 </div>
               </div>
              </div>
-                <div className='col-span-1 sm:col-span-2 w-full h-auto shadow-xl bg-black
-                    bg-opacity-50 shadow-[#22262d] rounded-xl lg:p-4'>
-                <div className='p-4'>
-                <form>
-                  <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 w-full py-2'>
-                    <div className='flex flex-col'>
-                      <label className='uppercase text-sm py-2 text-white'>
-                        Name
-                      </label>
-                      <input className='border-2 rounded-lg p-3 flex border-red-300' type='text' />
+              <div className='flex flex-row'>
+                 <div className='flex-1 w-full h-auto shadow-xl bg-black bg-opacity-50 shadow-[#22262d] rounded-xl lg:p-4'>
+                    <div className='p-10'>
+                    <div>
+                       <img
+              className='rounded-xl hover:scale-105 ease-in duration-300 w-[600px] flex'
+              src='/assets/Me2.png'
+              alt='Contact image'
+                    />
+                      </div>
+                      <div className='p-4 mt-4 flex flex-col items-start'>
+                      <h2 className='text-xl font-bold text-red-400'>Contact Me</h2>
+                      <p className='text-white mt-2'>Phone: 604-760-2908</p>
+                      <p className='text-white mt-2'>Address: 13308 central ave, Surrey, BC</p>
+                      <p className='text-white mt-2'>Email: Sheraliramzan36@gmail.com </p>
                     </div>
-                    <div className='flex flex-col'>
-                      <label className='uppercase text-sm py-2 text-white'>
-                        Phone Number
-                      </label>
-                      <input className='border-2 rounded-lg p-3 flex border-red-300' type='text' />
                     </div>
                   </div>
-                  <div className='flex flex-col py-2'>
-                        <label className='uppercase text-sm py-2 text-white'>Email</label>
-                        <input className='border-2 rounded-lg p-3 flex border-red-300' type="email" />
-                        </div>
-                        <div className='flex flex-col py-2'>
-                        <label className='uppercase text-sm py-2 text-white'>Subject</label>
-                        <input className='border-2 rounded-lg p-3 flex border-red-300' type="text" />
-                        </div>
-                        <div className='flex flex-col py-2'>
-                        <label className='uppercase text-sm py-2 text-white'>Message</label>
-                        <textarea className='border-2 rounded-lg p-3 border-red-400'rows="10"></textarea>
-                        </div>
-                        <button className='w-full p-4 text-white mt-4'>Send Message</button>
-                    </form>
-                </div>
-                </div>
+            </div>
+                
             </div>
       </div>
       <div className='flex justify-center py-8 md:py-12'>

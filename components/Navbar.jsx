@@ -102,18 +102,26 @@ export default function Navbar () {
                             <div className="pt-40">
                                 <p className="uppercase tracking-widest text-red-600 font-bold">Connect with me</p>
                                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
+                                    <Link href="https://www.linkedin.com/in/aly-ramzan-22018b266/" target="_blank">
                                     <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer bg-white hover:scale-105 ease-in duration-300">
                                         <FaLinkedinIn />
                                     </div>
+                                    </Link>
+                                    <Link href="https://github.com/Sheraliramzan">
                                     <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer bg-white hover:scale-105 ease-in duration-300">
                                         <FaGithub />
                                     </div>
+                                    </Link>
+                                    <Link href="https://www.instagram.com/alyramzan/">
                                     <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer bg-white hover:scale-105 ease-in duration-300">
                                         <FaInstagram />
                                     </div>
+                                    </Link>
+                                    <Link href="mailto:sheraliramzan36@gmail.com">
                                     <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer bg-white hover:scale-105 ease-in duration-300">
                                         <AiOutlineMail />
                                     </div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
