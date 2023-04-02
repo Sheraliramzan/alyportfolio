@@ -53,8 +53,8 @@ export default function Hero() {
             </span>
           </h2>
           <p className="font-sans text-white max-w-3xl mx-auto mb-8 px-4 md:px-0">
-            As a {fullText.toLowerCase()}, you possess a diverse range of
-            technical skills and knowledge in {fullText.toLowerCase()} development. You are
+            As a {fullText.toLowerCase()}, I possess a diverse range of
+            technical skills and knowledge in {fullText.toLowerCase()} development. I am
             able to design and develop fully functional {fullText.toLowerCase()} applications
             from scratch, utilizing a variety of programming languages,
             frameworks, and tools.

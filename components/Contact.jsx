@@ -4,30 +4,6 @@ import { AiOutlineMail } from 'react-icons/ai';
 import Link from 'next/link';
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi';
 
-const handleSubmit = async (event) => {
-  event.preventDefault(); // prevent default form submission behavior
-  const formData = new FormData(event.target); // get form data
-  const name = formData.get('name');
-  const phone = formData.get('phone');
-  const email = formData.get('email');
-  const subject = formData.get('subject');
-  const message = formData.get('message');
-  const body = JSON.stringify({ name, phone, email, subject, message }); // create request body
-
-  try {
-    const response = await fetch('/api/send-email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body,
-    });
-    const data = await response.json();
-    console.log('Email sent:', data.message);
-  } catch (error) {
-    console.error('Error sending email:', error);
-  }
-};
 
 const Contact = () => {
   return (
@@ -40,7 +16,7 @@ const Contact = () => {
                 <h2 className='uppercase text-white py-6'>
                  Get In <span className='text-red-500'>Touch</span>
                 </h2>
-             <div className=' grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3'>
+             <div className=' grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2'>
                 <div className='shadow-xl shadow-[#22262d] bg-black
                     bg-opacity-50 rounded-xl p-4'>
               <div className='p-4'>
@@ -85,13 +61,13 @@ const Contact = () => {
               </div>
              </div>
               <div className='flex flex-row'>
-                 <div className='flex-1 w-full h-auto shadow-xl bg-black bg-opacity-50 shadow-[#22262d] rounded-xl lg:p-4'>
+                 <div className='flex-1 w-full h-auto shadow-xl bg-black bg-opacity-50 shadow-[#22262d] rounded-xl lg:p-4 flex-grow-1 min-h-0'>
                     <div className='p-10'>
                     <div>
                        <img
-              className='rounded-xl hover:scale-105 ease-in duration-300 w-[600px] flex'
-              src='/assets/Me2.png'
-              alt='Contact image'
+                        className='rounded-xl hover:scale-105 ease-in duration-300 w-[600px] flex'
+                        src='/assets/Me2.png'
+                        alt='Contact image'
                     />
                       </div>
                       <div className='p-4 mt-4 flex flex-col items-start'>
