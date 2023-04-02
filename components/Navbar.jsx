@@ -40,16 +40,16 @@ export default function Navbar () {
                         <Link href="/">
                             <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-600 text-white">Home</li>
                         </Link>
-                        <Link href="#about">
+                        <Link href="/#about">
                             <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-600 text-white">About</li>
                         </Link>
-                        <Link href="#skills">
+                        <Link href="/#skills">
                             <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-600 text-white">Skills</li>
                         </Link>
-                        <Link href="#projects">
+                        <Link href="/#projects">
                             <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-600 text-white">Projects</li>
                         </Link>
-                        <Link href="#contact">
+                        <Link href="/#contact">
                             <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-600 text-white">Contact</li>
                         </Link>
 
