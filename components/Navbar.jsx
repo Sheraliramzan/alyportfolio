@@ -107,17 +107,17 @@ export default function Navbar () {
                                         <FaLinkedinIn />
                                     </div>
                                     </Link>
-                                    <Link href="https://github.com/Sheraliramzan">
+                                    <Link href="https://github.com/Sheraliramzan" target="_blank">
                                     <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer bg-white hover:scale-105 ease-in duration-300">
                                         <FaGithub />
                                     </div>
                                     </Link>
-                                    <Link href="https://www.instagram.com/alyramzan/">
+                                    <Link href="https://www.instagram.com/alyramzan/" target="_blank">
                                     <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer bg-white hover:scale-105 ease-in duration-300">
                                         <FaInstagram />
                                     </div>
                                     </Link>
-                                    <Link href="mailto:sheraliramzan36@gmail.com">
+                                    <Link href="mailto:sheraliramzan36@gmail.com" target="_blank" >
                                     <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer bg-white hover:scale-105 ease-in duration-300">
                                         <AiOutlineMail />
                                     </div>

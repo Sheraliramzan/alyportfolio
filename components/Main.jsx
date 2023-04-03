@@ -70,7 +70,7 @@ export default function Hero() {
               <FaGithub size={24} color="#fff" />
             </div>
             </Link>
-            <Link href="mailto:sheraliramzan36@gmail.com">
+            <Link href="mailto:sheraliramzan36@gmail.com" target="_blank">
             <div className="rounded-full shadow-lg shadow-red-200 p-6 cursor-pointer bg-red-500 hover:scale-110 ease-in duration-300">
               <AiOutlineMail size={24} color="#fff" />
             </div>
