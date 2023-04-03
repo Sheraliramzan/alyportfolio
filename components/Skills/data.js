@@ -67,7 +67,7 @@ export const data = [
     {
         id: 14,
         title: "MongoDB",
-        image: "/skills/Mongo.png",
+        image: "/skills/mongo.png",
     },
     {
         id: 15,
