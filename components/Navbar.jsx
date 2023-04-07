@@ -24,19 +24,19 @@ export default function Navbar () {
          window.addEventListener("scroll", handleShadow);
     }, []);
     return(
-        <div className={shadow ? 'fixed top-0 w-full h-21 p-6 shadow-xl shadow-gray-500 z-[100] bg-black' : "fixed top-0 w-full h-21 p-6  z-[100] bg-black"}>
+        <div className={shadow ? 'fixed top-0 w-full h-21  shadow-xl shadow-gray-500 z-[100] bg-black' : "fixed top-0 w-full h-21   z-[100] bg-black"}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <Link href="/">
                 <Image 
                     src="/assets/logo.png" 
                     alt="/" 
-                    width={105} 
+                    width={70} 
                     height={50}
                 />
                 </Link>
                 <div>
                     
-                    <ul className=" hidden md:flex ">
+                    <ul className=" hidden md:flex lg:ml-[300px] ">
                         <Link href="/">
                             <li className="ml-10 text-sm uppercase hover:border-b hover:text-red-600 text-white">Home</li>
                         </Link>
@@ -81,19 +81,19 @@ export default function Navbar () {
                                 <p className="w-[85%] md:w-[90%] py-4 font-bold text-white">Let's code something outstanding</p>
                             </div>
                         </div>
-                        <div className="py-4 flex flex-col">
+                        <div className="py-2 flex flex-col">
                             <ul className="uppercase">
                                 <Link href="/">
-                                    <li onClick={()=> setShow(false)} className="py-4 text-sm font-bold text-white">Home</li>
+                                    <li onClick={()=> setShow(false)} className="py-2 text-sm font-bold text-white">Home</li>
                                 </Link>
                                 <Link href="/#about">
-                                    <li onClick={()=> setShow(false)} className="py-4 text-sm font-bold text-white ">About</li>
+                                    <li onClick={()=> setShow(false)} className="py-2 text-sm font-bold text-white ">About</li>
                                 </Link>
                                 <Link href="/#skills">
-                                    <li onClick={()=> setShow(false)} className="py-4 text-sm font-bold text-white">Skills</li>
+                                    <li onClick={()=> setShow(false)} className="py-2 text-sm font-bold text-white">Skills</li>
                                 </Link>
                                 <Link href="/#projects">
-                                    <li onClick={()=> setShow(false)} className="py-4 text-sm font-bold text-white">Projects</li>
+                                    <li onClick={()=> setShow(false)} className="py-2 text-sm font-bold text-white">Projects</li>
                                 </Link>
                                 <Link href="/#contact">
                                     <li onClick={()=> setShow(false)} className="py-4 text-sm font-bold text-white">Contact</li>

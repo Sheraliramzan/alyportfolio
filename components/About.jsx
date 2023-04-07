@@ -33,10 +33,10 @@ export default function About() {
         <div className="flex justify-center items-center">
           <motion.div
             className="rounded-full overflow-hidden"
-            whileHover={{ scale: 1.2, opacity: 0.5, rotate: 360 }}
+            whileHover={{ scale: 1.2, opacity: 0.5}}
             transition={{ duration: 1}}
           >
-            <Image src="/assets/Me2.png" alt="/" width={300} height={300} />
+            <Image src="/assets/me4.jpeg" alt="/" width={300} height={300} />
           </motion.div>
         </div>
       </div>

@@ -19,10 +19,10 @@ const Contact = () => {
              <div className=' grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2'>
                 <div className='shadow-xl shadow-[#22262d] bg-black
                     bg-opacity-50 rounded-xl p-4'>
-              <div className='p-4'>
-                <div>
+              <div className='p-6'>
+                <div className= 'flex justify-center items-center'>
                   <img
-                    className='rounded-xl hover:scale-105 ease-in duration-300'
+                    className='rounded-xl py-2 overflow-hidden hover:scale-105 ease-in duration-300'
                     src='/assets/backl.jpg'
                     alt='/'
                   />
@@ -38,22 +38,22 @@ const Contact = () => {
                 <p className='uppercase text-red-500'>Connect with me</p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                 <Link href="https://www.linkedin.com/in/aly-ramzan-22018b266/" target="_blank">
-                  <div className='rounded-full shadow-lg shadow-red-200 p-6 cursor-pointer bg-red-500 hover:scale-110 ease-in duration-300'>
+                  <div className='rounded-full shadow-lg shadow-red-200 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                     <FaLinkedin size={24} color="#fff" />
                   </div>
                   </Link>
                   <Link href="https://github.com/Sheraliramzan" target="_blank">
-                  <div className='rounded-full shadow-lg shadow-red-200 p-6 cursor-pointer bg-red-500 hover:scale-110 ease-in duration-300'>
+                  <div className='rounded-full shadow-lg shadow-red-200 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                     <FaGithub size={24} color="#fff" />
                   </div>
                   </Link>
                   <Link href="mailto:sheraliramzan36@gmail.com" target="_blank">
-                  <div className='rounded-full shadow-lg shadow-red-200 p-6 cursor-pointer bg-red-500 hover:scale-110 ease-in duration-300'>
+                  <div className='rounded-full shadow-lg shadow-red-200 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                     <AiOutlineMail size={24} color="#fff" />
                   </div>
                   </Link>
                   <Link href="https://www.instagram.com/alyramzan/" target="_blank">
-                  <div className='rounded-full shadow-lg shadow-red-200 p-6 cursor-pointer bg-red-500 hover:scale-110 ease-in duration-300'>
+                  <div className='rounded-full shadow-lg shadow-red-200 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                     <FaInstagram size={24} color="#fff" />
                   </div>
                   </Link>
@@ -62,13 +62,13 @@ const Contact = () => {
              </div>
               <div className='flex flex-row'>
                  <div className='flex-1 w-full h-auto shadow-xl bg-black bg-opacity-50 shadow-[#22262d] rounded-xl lg:p-4 flex-grow-1 min-h-0'>
-                    <div className='p-10'>
-                    <div>
+                    <div className='p-6'>
+                    <div className="flex justify-center items-center">
                        <img
-                        className='rounded-xl hover:scale-105 ease-in duration-300 w-[600px] flex'
-                        src='/assets/Me2.png'
+                        className='rounded-full overflow-hidden hover:scale-105 ease-in duration-300 w-[400px] flex'
+                        src='/assets/me3.jpeg'
                         alt='Contact image'
-                    />
+                        />
                       </div>
                       <div className='p-4 mt-4 flex flex-col items-start'>
                       <h2 className='text-xl font-bold text-red-400'>Contact Me</h2>
