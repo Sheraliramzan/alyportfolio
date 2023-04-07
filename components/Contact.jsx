@@ -65,14 +65,16 @@ const Contact = () => {
                     <div className='p-6'>
                     <div className="flex justify-center items-center">
                        <img
-                        className='rounded-full overflow-hidden hover:scale-105 ease-in duration-300 w-[400px] flex'
+                        className='rounded-xl h-[360px] overflow-hidden hover:scale-105 ease-in duration-300 flex'
                         src='/assets/me3.jpeg'
                         alt='Contact image'
                         />
                       </div>
                       <div className='p-4 mt-4 flex flex-col items-start'>
                       <h2 className='text-xl font-bold text-red-400'>Contact Me</h2>
-                      <p className='text-white mt-2'>Phone: 604-760-2908</p>
+                      <Link href='tel:6047602908'>
+                      <p className='text-white mt-2 cursor-pointer'>Phone: 604-760-2908</p>
+                      </Link>
                       <p className='text-white mt-2'>Address: 13308 central ave, Surrey, BC</p>
                       <p className='text-white mt-2'>Email: Sheraliramzan36@gmail.com </p>
                     </div>

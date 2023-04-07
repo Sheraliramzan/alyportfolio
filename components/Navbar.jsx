@@ -4,7 +4,13 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
 
-export default function Navbar() {
+export default function Navbar({
+    onHomeClick = () => {},
+    onAboutClick = () => {},
+    onSkillsClick = () => {},
+    onProjectsClick = () => {},
+    onContactClick = () => {},
+}) {
   const [show, setShow] = useState(false);
   const [shadow, setShadow] = useState(false);
 
@@ -32,42 +38,38 @@ export default function Navbar() {
     >
       <div className="flex justify-between items-center w-full h-full px-2">
         <div className="flex pl-10">
-          <Link href="/">
-            <Image src="/assets/logo.png" alt="/" width={70} height={50} />
-          </Link>
+
+            <Image src="/assets/logo.png" alt="/" width={70} height={50} onClick={onHomeClick} />
+
         </div>
         <div className="flex">
           <ul className="hidden lg:flex gap-4 md:flex ">
-            <Link href="/">
-              <li className=" p-2 text-sm uppercase hover:border-b hover:text-red-600 text-white">
+              <li className=" p-2 text-sm uppercase hover:border-b hover:text-red-600 text-white" onClick={onHomeClick}>
                 Home
               </li>
-            </Link>
-            <Link href="/#about">
-              <li className=" p-2 text-sm uppercase hover:border-b hover:text-red-600 text-white">
+              <li className=" p-2 text-sm uppercase hover:border-b hover:text-red-600 text-white" onClick={onAboutClick}>
                 About
               </li>
-            </Link>
-            <Link href="/#skills">
-              <li className=" p-2 text-sm uppercase hover:border-b hover:text-red-600 text-white">
+            
+              <li className=" p-2 text-sm uppercase hover:border-b hover:text-red-600 text-white" onClick={onSkillsClick}>
                 Skills
               </li>
-            </Link>
-            <Link href="/#projects">
-              <li className=" p-2 text-sm uppercase hover:border-b hover:text-red-600 text-white">
+          
+            
+              <li className=" p-2 text-sm uppercase hover:border-b hover:text-red-600 text-white" onClick={onProjectsClick}>
                 Projects
               </li>
-            </Link>
-            <Link href="/#contact">
-              <li className=" p-2 text-sm uppercase hover:border-b hover:text-red-600 text-white">
+           
+            
+              <li className=" p-2 text-sm uppercase hover:border-b hover:text-red-600 text-white" onClick={onContactClick}>
                 Contact
               </li>
-            </Link>
+          
             <Link
               href="/resume/AlyResume.pdf"
               target="_blank"
             >
-              <li className=" text-sm uppercase hover:border-b hover:text-red-600 text-white border p-2 rounded-lg">
+              <li className=" p-2 text-sm uppercase hover:border-b hover:text-red-600 text-white">
                 Resume
               </li>
             </Link>
