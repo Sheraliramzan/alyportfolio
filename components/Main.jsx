@@ -61,7 +61,7 @@ export default function Hero() {
             from scratch, utilizing a variety of programming languages,
             frameworks, and tools.
           </p>
-          <div className="fixed top-[40%] z-50 right-5 space-y-4 flex flex-col items-end justify-end max-w-sm mx-auto">
+          <div className="fixed top-[40%] z-50 right-5 space-y-4 flex-col items-end justify-end max-w-sm mx-auto  hidden sm:flex">
             <div className="absolute bottom-[215px] left-1/2 bg-white h-full w-1 transform -translate-x-1/2"></div>
             <a href="https://www.linkedin.com/in/aly-ramzan-22018b266/" target="_blank">
              <div className="rounded-full shadow-lg shadow-red-200 p-2 bg-white cursor-pointer hover:scale-110 ease-in duration-300">
