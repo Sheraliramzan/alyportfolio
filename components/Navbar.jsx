@@ -75,7 +75,7 @@ export default function Navbar({
             </Link>
           </ul>
 
-          <div onClick={handleShow} className="md:hidden ml-[150px]">
+          <div onClick={handleShow} className="md:hidden ml-[190px]">
             <AiOutlineMenu className="" size={35} />
           </div>
         </div>

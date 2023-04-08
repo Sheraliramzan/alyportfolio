@@ -7,7 +7,7 @@ export default function Skills() {
   return (
     <div id="skills" className="w-full lg:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex-col justify-center h-full">
-        <p className="text-xl tracking-widest text-red-300">Skills</p>
+        <p className="text-xl tracking-widest uppercase text-red-300">Skills</p>
         <h2 className="py-4 text-white uppercase">What I <span className="text-red-500">Do</span></h2>
         <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {data.map((item, index) => {
