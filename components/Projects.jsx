@@ -8,6 +8,8 @@ import back3 from '../public/projects/backPoke.png'
 import back4 from '../public/projects/backPath.png'
 import back5 from '../public/projects/backChill.png'
 import back6 from '../public/projects/backWeat.png'
+import back7 from '../public/projects/backTask.png'
+
 
 const Projects = () => {
   return (
@@ -54,6 +56,12 @@ const Projects = () => {
                     backgroundImg={back6}
                     projectUrl="/weatherrico"
                     title2='NextJS | Axios | Tailwind | API | OpenWeather '
+                    />
+                    <ProjectItem 
+                    title="TaskMas" 
+                    backgroundImg={back7}
+                    projectUrl="/taskmas"
+                    title2='NextJS | Angular | Bootstrap'
                     />
                 </div>
         </div>
