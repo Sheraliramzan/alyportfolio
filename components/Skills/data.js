@@ -58,5 +58,15 @@ export const data = [
         id: 12,
         title: "GitHub",
         image: "/skills/github.png",
+    },
+    {
+        id: 13,
+        title: "Angular",
+        image: "/skills/angular.png",
+    },
+    {
+        id: 14,
+        title: "Bootstrap",
+        image: "/skills/bootst.png",
     }
 ]
